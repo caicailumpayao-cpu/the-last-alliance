@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Last Alliance | Official Game Page</title>
+<style>
+  :root {
+    --bg-dark: #0f0c0a;
+    --bg-card: #1a1412;
+    --border-stone: #3d3532;
+    --accent-gold: #f5b942;
+    --accent-ember: #e85a1c;
+    --text-main: #f2ece4;
+    --text-muted: #b5a89d;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background: linear-gradient(180deg, #24130d 0%, var(--bg-dark) 100%);
+    border-bottom: 2px solid var(--border-stone);
+    padding: 3rem 1.5rem 4rem;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(232, 90, 28, 0.2);
+    border: 1px solid var(--accent-ember);
+    color: var(--accent-gold);
+    padding: 0.25rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    color: var(--accent-gold);
+    text-shadow: 0 4px 18px rgba(232, 90, 28, 0.45);
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+  }
+
+  .tagline {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 620px;
+    margin: 0 auto 2rem;
+  }
+
+  .cover-frame {
+    max-width: 520px;
+    margin: 0 auto 2.25rem;
+    border: 4px solid #594e49;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.85), 0 0 30px rgba(232, 90, 28, 0.25);
+    background: #14100e;
+  }
+
+  .cover-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #f5b942 0%, #e85a1c 100%);
+    color: #140d0a;
+    font-weight: 800;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(232, 90, 28, 0.4);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(232, 90, 28, 0.6);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    background: var(--bg-card);
+    color: var(--text-main);
+    border: 1px solid var(--border-stone);
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    padding: 0.9rem 1.75rem;
+    border-radius: 8px;
+    transition: border-color 0.15s ease;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--accent-gold);
+  }
+
+  section {
+    padding: 3.5rem 1.5rem;
+    border-bottom: 1px solid #26201d;
+  }
+
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--accent-gold);
+    font-size: 1.85rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .story-text {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 1.08rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-stone);
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  .feature-card h3 {
+    color: var(--accent-gold);
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .feature-card p {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+  }
+
+  .creator-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-stone);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+
+  footer a {
+    color: var(--accent-gold);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <span class="badge">Indie Action RPG</span>
+    <h1>THE LAST ALLIANCE</h1>
+    <p class="tagline">Two young heroes. One molten realm. Stand together against the Overlord of the Abyss.</p>
+
+    <div class="cover-frame">
+      <img src="cover.png" alt="The Last Alliance Cover Art">
+    </div>
+
+    <div class="cta-group">
+      <a href="https://pjhedd.itch.io/the-last-alliance" target="_blank" rel="noopener" class="btn-primary">Play Now on itch.io</a>
+      <a href="#about" class="btn-secondary">Explore the Story</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2>The Story</h2>
+    <p class="story-text">
+      When the molten gates of the underworld crack open, an ancient demonic warlord rises to consume the realm. Armed with steel, courage, and an unbreakable bond, two young adventurers must form <strong>The Last Alliance</strong> and venture into the volcanic depths to stop the invasion before all hope is lost.
+    </p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <h2>Key Highlights</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Dual-Hero Adventure</h3>
+        <p>Step into the boots of two brave young fighters battling side by side through perilous lands.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Molten Dungeons &amp; Runes</h3>
+        <p>Traverse lava-lit caverns, ancient stone fortresses, and mysterious runic trials.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Colossal Boss Battles</h3>
+        <p>Test your blade and strategy against towering demonic foes and the fiery Overlord.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="play">
+  <div class="container">
+    <div class="creator-box">
+      <h2>Ready to Join the Fight?</h2>
+      <p class="story-text" style="margin-bottom: 1.5rem;">
+        Download or play <strong>The Last Alliance</strong> directly on itch.io and support indie game development by <strong>pjhedd</strong>.
+      </p>
+      <a href="https://pjhedd.itch.io/the-last-alliance" target="_blank" rel="noopener" class="btn-primary">Visit Official itch.io Page</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Created by <strong>pjhedd</strong> &bull; Available on <a href="https://pjhedd.itch.io/the-last-alliance" target="_blank" rel="noopener">itch.io</a></p>
+</footer>
+
+</body>
+</html>
