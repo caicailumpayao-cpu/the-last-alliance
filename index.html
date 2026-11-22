@@ -167,7 +167,56 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
     }
 
+    .combat-section {
+      margin-top: 2.5rem;
+    }
+
+    .section-heading {
+      text-align: center;
+      font-size: 1.65rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 14px rgba(234, 88, 12, 0.35);
+    }
+
+    .combat-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .combat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glow);
+      border-radius: 12px;
+      padding: 1.75rem;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.55);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .combat-card:hover {
+      transform: translateY(-3px);
+      background: var(--bg-card-hover);
+    }
+
+    .combat-card h3 {
+      color: var(--gold);
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 0.65rem;
+      letter-spacing: 0.03em;
+    }
+
+    .combat-card p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+    }
+
     .story-panel {
+      margin-top: 3rem;
       background: var(--bg-card);
       border: 1px solid var(--border-glow);
       border-radius: 12px;
@@ -190,17 +239,6 @@
 
     .screenshots-section {
       margin-top: 3rem;
-    }
-
-    .section-heading {
-      text-align: center;
-      font-size: 1.65rem;
-      font-weight: 800;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 1.5rem;
-      text-shadow: 0 2px 14px rgba(234, 88, 12, 0.35);
     }
 
     .screenshots-grid {
@@ -283,6 +321,20 @@
       <div class="pillar-badge">⚔️ Fight.</div>
       <div class="pillar-badge">🗝️ Discover.</div>
       <div class="pillar-badge">🤝 Unite.</div>
+    </section>
+
+    <section class="combat-section" aria-label="Combat Styles">
+      <h2 class="section-heading">Play Your Way: ARPG &amp; Turn-Based</h2>
+      <div class="combat-grid">
+        <div class="combat-card">
+          <h3>⚡ Action RPG (ARPG) Style</h3>
+          <p>Jump into fast-paced, real-time action combat where movement, timing, and reflexes put you directly in control of the battle.</p>
+        </div>
+        <div class="combat-card">
+          <h3>🛡️ Turn-Based Style</h3>
+          <p>Prefer calculated tactics? Play in turn-based style to plan skills, team synergy, and moves at your own pace.</p>
+        </div>
+      </div>
     </section>
 
     <section class="story-panel">
